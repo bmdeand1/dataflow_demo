@@ -1,0 +1,8 @@
+.terraform/
+terraform.tfstate
+
+__pycache__/
+dataflow_demo.egg-info/
+env/
+
+.vscode/

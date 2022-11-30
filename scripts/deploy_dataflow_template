@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -eu;
+
+python -m dataflow.job \
+    --runner DataflowRunner \
+    --project "$GCP_PROJECT_ID" \
+    --staging_location "gs://$GCS_DATAFLOW_BUCKET/staging" \
+    --temp_location "gs://$GCS_DATAFLOW_BUCKET/temp" \
+    --template_location "gs://$GCS_DATAFLOW_BUCKET/templates/dataflow-demo" \
+    --region "$GCP_REGION" \
+    --gcp_project_id "${GCP_PROJECT_ID}" \
+    --subscription_id "projects/${GCP_PROJECT_ID}/subscriptions/example_subscription" \
+    --dataset_id "example_dataset" \
+    --streaming \
+    --setup_file ./setup.py;

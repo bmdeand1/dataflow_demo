@@ -1,0 +1,12 @@
+[
+  {
+    "name": "column_one",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "column_two",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

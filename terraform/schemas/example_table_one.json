@@ -1,0 +1,7 @@
+[
+  {
+    "name": "column_one",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]
